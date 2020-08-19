@@ -14,7 +14,6 @@ function Header() {
             Hej och välkommen! Tryck på "nytt spel" om du vågar möta mig i en
             match...
           </p>
-          <button className="newGameBtn">Nytt spel!</button>
         </div>
       </div>
     </div>

@@ -4,19 +4,21 @@
 }
 
 .headingBox {
-  width: 1000px;
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
 .headingBox img {
-  width: 28rem;
+  height: 90%;
   margin-left: 1rem;
-  position: relative;
-  top: 0.5rem;
 }
 .computerBox {
   display: flex;
   align-items: center;
-  width: calc(100vw - 1000px);
+  justify-content: space-evenly;
+  width: 50%;
 }
 
 .computerBox img {
@@ -31,19 +33,6 @@
   border-radius: 5px;
   border: 5px dashed rgb(69, 0, 97);
   padding: 1rem;
-}
-
-.newGameBtn {
-  width: 100%;
-  height: 4rem;
-  border-radius: 10px;
-  box-shadow: 1px 1px 2px black;
-  font-family: "Chelsea Market", cursive;
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-  background-color: rgb(255, 238, 0);
-  color: rgb(100, 94, 0);
-  border: 4px solid rgb(172, 160, 0);
 }
 
 .newGameBtn:focus {

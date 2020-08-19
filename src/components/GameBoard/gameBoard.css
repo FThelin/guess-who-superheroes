@@ -1,19 +1,33 @@
 .gameBoard {
   grid-area: gameBoard;
+  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .heroes {
-  width: 960px;
-  height: 780px;
+  width: 95%;
+  height: 95%;
   background-color: rgba(179, 229, 245, 0.808);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   border: 7px solid rgb(0, 185, 241);
   box-shadow: 0 0 20px black;
   border-radius: 10px;
+}
+
+.heroes img {
+  width: 15%;
+}
+
+.heroes img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.deselected {
+  opacity: 0.2;
 }

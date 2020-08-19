@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  border: 2px solid rgb(0, 185, 241);
+
   box-shadow: 0 0 20px black;
   border-radius: 10px;
-  width: 55rem;
+  width: 95%;
 }
