@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./header.css";
+import GameContext from "../../context/gameContext";
 
 function Header() {
+  const { robotText } = useContext(GameContext);
+
   return (
     <div className="header">
       <div className="headingBox">
@@ -10,10 +13,7 @@ function Header() {
       <div className="computerBox">
         <img src={require("../../img/robot.png")} alt="robot-opponent"></img>
         <div className="textBox">
-          <p>
-            Hej och välkommen! Tryck på "nytt spel" om du vågar möta mig i en
-            match...
-          </p>
+          <p>{robotText}</p>
         </div>
       </div>
     </div>

@@ -34,17 +34,3 @@
   border: 5px dashed rgb(69, 0, 97);
   padding: 1rem;
 }
-
-.newGameBtn:focus {
-  outline: none;
-}
-
-.newGameBtn:hover {
-  cursor: pointer;
-  box-shadow: 2px 2px 10px black;
-}
-
-.newGameBtn:active {
-  cursor: pointer;
-  box-shadow: -2px -2px 10px black;
-}
