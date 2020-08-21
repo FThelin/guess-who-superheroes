@@ -5,8 +5,8 @@ import QuestionCard from "../QuestionCard/QuestionCard";
 function Questions() {
   return (
     <div className="questions">
-      <QuestionCard text="Pojke?" image="boy.png" />
-      <QuestionCard text="Flicka?" image="girl.png" />
+      <QuestionCard text="Pojke?" image="boy.png" question="boy" />
+      <QuestionCard text="Flicka?" image="girl.png" question="girl" />
       <QuestionCard text="Mantel?" image="cape.png" />
       <QuestionCard text="Ögonmask?" image="mask.png" />
       <QuestionCard text="Bälte?" image="belt.png" />

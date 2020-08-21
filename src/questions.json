@@ -1,0 +1,12 @@
+[
+  {
+    "name": "boy",
+    "true": "Ja det stämmer, min karaktär är en pojke.",
+    "false": "Nej tyvärr, min karaktär är inte en pojke."
+  },
+  {
+    "name": "girl",
+    "true": "Ja det stämmer, min karaktär är en flicka.",
+    "false": "Nej tyvärr, min karaktär är inte en flicka."
+  }
+]

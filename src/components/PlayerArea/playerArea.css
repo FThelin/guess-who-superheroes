@@ -8,10 +8,10 @@
   box-shadow: 0 0 20px black;
   border-radius: 10px;
   width: 95%;
+  height: 18rem;
 }
 
 .playerArea img {
-  width: 95%;
   position: relative;
 }
 
@@ -58,4 +58,18 @@
   position: absolute;
   z-index: 2;
   width: 10rem;
+}
+
+.heroCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.heroCard p {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: #092f5a;
 }

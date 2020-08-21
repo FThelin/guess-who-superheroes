@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Heroes from "../heroes.json";
 
 const GameContext = React.createContext();

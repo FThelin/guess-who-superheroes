@@ -75,7 +75,7 @@
     "headGear": false
   },
   {
-    "name": "The Hulk",
+    "name": "Hulken",
     "image": "hulk.png",
     "boy": true,
     "girl": false,
@@ -125,7 +125,7 @@
     "headGear": true
   },
   {
-    "name": "SuperGirl",
+    "name": "Supergirl",
     "image": "supergirl.png",
     "boy": false,
     "girl": true,
@@ -275,7 +275,7 @@
     "headGear": false
   },
   {
-    "name": "Green Lantern",
+    "name": "Gröna lyktan",
     "image": "greenlantern.png",
     "boy": true,
     "girl": false,
@@ -300,7 +300,7 @@
     "headGear": false
   },
   {
-    "name": "BatGirl",
+    "name": "Batgirl",
     "image": "batgirl.png",
     "boy": false,
     "girl": true,
