@@ -16,21 +16,21 @@ const PlayerArea = () => {
   const characterSelect = () => {
     let randomNumber = Math.floor(Math.random() * 18);
     setPlayerCharacter(Heroes[randomNumber].image);
+  };
 
-    setPlayerHero(Heroes);
+  const stopCharacterSelect = () => {
+    clearInterval(startCharacterSelect),
+      setRobotText(
+        "Snyggt, jag har också valt en karaktär. Nu kan du börja med att ställa mig en fråga.."
+      ),
+      console.log(playerCharacter);
   };
 
   const startNewGame = () => {
     setGamePhase(1);
     setRobotText("Spännande...");
     const startCharacterSelect = setInterval(characterSelect, 150);
-    setTimeout(() => {
-      clearInterval(startCharacterSelect);
-      setRobotText(
-        "Snyggt, jag har också valt en karaktär. Nu kan du börja med att ställa mig en fråga.."
-      );
-      console.log(playerHero);
-    }, 5000);
+    setTimeout(stopCharacterSelect, 5000);
   };
 
   return (
@@ -43,6 +43,7 @@ const PlayerArea = () => {
       {gamePhase === 2 ? <button className="yesBtn">Ja!</button> : null}
 
       <div>
+        {console.log(playerCharacter)}
         <img src={require(`../../img/${playerCharacter}`)} alt="no-hero-yet" />
       </div>
 
