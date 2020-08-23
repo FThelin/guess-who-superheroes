@@ -1,11 +1,13 @@
 [
   {
     "name": "boy",
+    "question": "Är din hjälte en pojke?",
     "true": "Ja det stämmer, min karaktär är en pojke.",
     "false": "Nej tyvärr, min karaktär är inte en pojke."
   },
   {
     "name": "girl",
+    "question": "Är din hjälte en flicka?",
     "true": "Ja det stämmer, min karaktär är en flicka.",
     "false": "Nej tyvärr, min karaktär är inte en flicka."
   }

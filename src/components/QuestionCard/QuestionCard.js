@@ -1,25 +1,37 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./questionCard.css";
 import GameContext from "../../context/gameContext";
 import Questions from "../../questions.json";
 
 function QuestionCard(props) {
-  const { gamePhase, setGamePhase, robotHero, setRobotText } = useContext(
-    GameContext
+  const {
+    gamePhase,
+    setGamePhase,
+    robotHero,
+    setRobotText,
+    heroesLeftforPlayer,
+  } = useContext(GameContext);
+  const [status, setStatus] = useState(
+    <i className="fas fa-question-circle gray"></i>
   );
 
-  const askQuestion = () => {
+  const askQuestion = (e) => {
     if (gamePhase === 1) {
       for (const [key, value] of Object.entries(robotHero)) {
-        if (key == props.question) {
+        if (key === props.question) {
           const question = Questions.find(
-            (item) => item.name == props.question
+            (item) => item.name === props.question
           );
           setGamePhase(2);
+          e.target.parentNode.style.opacity = 0.5;
           if (value === true) {
             setRobotText(question.true);
+            setStatus(<i className="fas fa-check-circle green"></i>);
+            heroesLeftforPlayer(key, true);
           } else if (value === false) {
             setRobotText(question.false);
+            setStatus(<i className="fas fa-times-circle red"></i>);
+            heroesLeftforPlayer(key, false);
           }
         }
       }
@@ -27,12 +39,13 @@ function QuestionCard(props) {
   };
 
   return (
-    <div className="questionCard" onClick={() => askQuestion()}>
+    <div className="questionCard" onClick={askQuestion}>
       <img
         src={require(`../../img/questions/${props.image}`)}
         alt="question-card"
       ></img>
       <p>{props.text}</p>
+      {status}
     </div>
   );
 }

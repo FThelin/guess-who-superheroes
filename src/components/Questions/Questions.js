@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./questions.css";
 import QuestionCard from "../QuestionCard/QuestionCard";
+import GameContext from "../../context/gameContext";
 
 function Questions() {
+  const { gamePhase } = useContext(GameContext);
+
   return (
-    <div className="questions">
+    <div className={gamePhase === 1 ? "questions active" : "questions"}>
       <QuestionCard text="Pojke?" image="boy.png" question="boy" />
       <QuestionCard text="Flicka?" image="girl.png" question="girl" />
       <QuestionCard text="Mantel?" image="cape.png" />

@@ -8,11 +8,12 @@
   box-shadow: 0 0 20px black;
   border-radius: 10px;
   width: 95%;
-  height: 18rem;
+  height: 15rem;
 }
 
 .playerArea img {
   position: relative;
+  width: 8rem;
 }
 
 .playerArea button {

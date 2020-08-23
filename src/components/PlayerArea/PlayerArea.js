@@ -10,7 +10,6 @@ const PlayerArea = () => {
     setRobotText,
     playerHero,
     setPlayerHero,
-    robotHero,
     setRobotHero,
   } = useContext(GameContext);
   const [playerCharacter, setPlayerCharacter] = useState("hero.png");

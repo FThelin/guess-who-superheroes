@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  position: relative;
   box-shadow: 0 0 20px black;
   border-radius: 10px;
   font-size: 0.7rem;
@@ -19,4 +19,25 @@
 .questionCard:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+.questionCard i {
+  position: absolute;
+  right: 0.2rem;
+  top: -0.4rem;
+  font-size: 1rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.gray {
+  color: gray;
+}
+
+.green {
+  color: rgb(0, 128, 90);
+}
+
+.red {
+  color: rgb(255, 0, 64);
 }
