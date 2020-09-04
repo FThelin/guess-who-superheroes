@@ -3,7 +3,12 @@ import "./header.css";
 import GameContext from "../../context/gameContext";
 
 function Header() {
-  const { robotText } = useContext(GameContext);
+  const { robotText, gamePhase, setGamePhase } = useContext(GameContext);
+
+  const robotQuestion = () => {
+    console.log("hej");
+    setGamePhase(3);
+  };
 
   return (
     <div className="header">
@@ -13,7 +18,13 @@ function Header() {
       <div className="computerBox">
         <img src={require("../../img/robot.png")} alt="robot-opponent"></img>
         <div className="textBox">
-          <p>{robotText}</p>
+          <p>
+            {robotText.text}
+            {robotText.icon}
+          </p>
+          {gamePhase === 2 ? (
+            <button onClick={() => robotQuestion()}>Redo för min fråga?</button>
+          ) : null}
         </div>
       </div>
     </div>

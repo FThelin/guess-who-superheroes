@@ -5,9 +5,11 @@ const GameContext = React.createContext();
 
 export function GameProvider({ children }) {
   const [gamePhase, setGamePhase] = useState(0);
-  const [robotText, setRobotText] = useState(
-    'Hej och välkommen! Tryck på "nytt spel" om du vågar möta mig i en match...'
-  );
+  const [robotText, setRobotText] = useState({
+    text:
+      'Hej och välkommen! Tryck på "nytt spel" om du vågar möta mig i en match...',
+    icon: <i></i>,
+  });
   const [playerHero, setPlayerHero] = useState("");
   const [robotHero, setRobotHero] = useState(null);
   const [playerHeroesLeft, setPlayerHeroesLeft] = useState(Heroes);

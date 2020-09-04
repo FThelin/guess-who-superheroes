@@ -11,15 +11,17 @@ const PlayerArea = () => {
     playerHero,
     setPlayerHero,
     setRobotHero,
+    robotHero,
   } = useContext(GameContext);
   const [playerCharacter, setPlayerCharacter] = useState("hero.png");
 
   const startNewGame = () => {
-    setGamePhase(1);
-    setRobotText("Spännande...");
+    setGamePhase(10);
+    setRobotText({ text: "Spännande..." });
     const startCharacterSelect = setInterval(characterSelect, 150);
     setTimeout(() => {
       stopCharacterSelect(startCharacterSelect);
+      setGamePhase(1);
     }, 5000);
   };
 
@@ -41,9 +43,10 @@ const PlayerArea = () => {
 
   const stopCharacterSelect = (startCharacterSelect) => {
     clearInterval(startCharacterSelect);
-    setRobotText(
-      "Snyggt, jag har också valt en karaktär. Nu kan du börja med att ställa mig en fråga.."
-    );
+    setRobotText({
+      text:
+        "Snyggt, jag har också valt en karaktär. Nu kan du börja med att ställa mig en fråga..",
+    });
   };
 
   return (
@@ -53,14 +56,15 @@ const PlayerArea = () => {
           Nytt spel
         </button>
       ) : null}
-      {gamePhase === 2 ? <button className="yesBtn">Ja!</button> : null}
+      {gamePhase === 3 ? <button className="yesBtn">Ja!</button> : null}
 
       <div className="heroCard">
         <img src={require(`../../img/${playerCharacter}`)} alt="no-hero-yet" />
         <p>{playerHero.name}</p>
+        {console.log(robotHero)}
       </div>
 
-      {gamePhase === 2 ? <button className="noBtn">Nej!</button> : null}
+      {gamePhase === 3 ? <button className="noBtn">Nej!</button> : null}
     </div>
   );
 };

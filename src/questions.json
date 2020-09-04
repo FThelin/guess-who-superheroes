@@ -10,5 +10,119 @@
     "question": "Är din hjälte en flicka?",
     "true": "Ja det stämmer, min karaktär är en flicka.",
     "false": "Nej tyvärr, min karaktär är inte en flicka."
+  },
+  {
+    "name": "cape",
+    "question": "Har din hjälte en mantel?",
+    "true": "Ja, min hjälte har en mantel.",
+    "false": "Nej, ingen mantel på min hjälte."
+  },
+  {
+    "name": "mask",
+    "question": "Täcker din hjälte över sina ögon?",
+    "true": "Ja, min hjälte täcker över sina ögon med en mask.",
+    "false": "Nej, min hjälte har inget som täcker sina ögon."
+  },
+  {
+    "name": "belt",
+    "question": "Har din hjälte ett bälte?",
+    "true": "Ja, min hjälte har ett bälte på sig.",
+    "false": "Nej, min hjälte har inget bälte på sig."
+  },
+  {
+    "name": "logo",
+    "question": "Har din hjälte sitt märke på bröstet?",
+    "true": "Ja, min hjälte har sitt märke på bröstet.",
+    "false": "Nej, inget märke på min hjälte."
+  },
+  {
+    "name": "greenFeet",
+    "question": "Har din hjälte gröna skor/fötter?",
+    "true": "Ja, det är gröna skor/fötter på min hjälte.",
+    "false": "Nej, min hjälte har inte gröna skor/fötter."
+  },
+  {
+    "name": "redFeet",
+    "question": "Har din hjälte röda skor/fötter?",
+    "true": "Ja, det är röda skor/fötter på min hjälte.",
+    "false": "Nej, min hjälte har inte röda skor/fötter."
+  },
+  {
+    "name": "yellowFeet",
+    "question": "Har din hjälte gula skor/fötter?",
+    "true": "Ja, det är gula skor/fötter på min hjälte.",
+    "false": "Nej, min hjälte har inte gula skor/fötter."
+  },
+  {
+    "name": "blackFeet",
+    "question": "Har din hjälte svarta skor/fötter?",
+    "true": "Ja, det är svarta skor/fötter på min hjälte.",
+    "false": "Nej, min hjälte har inte svarta skor/fötter."
+  },
+  {
+    "name": "redShirt",
+    "question": "Har din hjälte en röd tröja?",
+    "true": "Ja, det är en röd tröja på min hjälte.",
+    "false": "Nej, min hjälte har ingen röd tröja."
+  },
+  {
+    "name": "blueShirt",
+    "question": "Har din hjälte en blå tröja?",
+    "true": "Ja, det är en blå tröja på min hjälte.",
+    "false": "Nej, min hjälte har ingen blå tröja."
+  },
+  {
+    "name": "greenShirt",
+    "question": "Har din hjälte en grön tröja?",
+    "true": "Ja, det är en grön tröja på min hjälte.",
+    "false": "Nej, min hjälte har ingen grön tröja."
+  },
+  {
+    "name": "yellowShirt",
+    "question": "Har din hjälte en gul tröja?",
+    "true": "Ja, det är en gul tröja på min hjälte.",
+    "false": "Nej, min hjälte har ingen gul tröja."
+  },
+  {
+    "name": "grayShirt",
+    "question": "Har din hjälte en grå tröja?",
+    "true": "Ja, det är en grå tröja på min hjälte.",
+    "false": "Nej, min hjälte har ingen grå tröja."
+  },
+  {
+    "name": "lightHair",
+    "question": "Har din hjälte mörkt hår?",
+    "true": "Ja, det är mörkt hår på min hjälte.",
+    "false": "Nej, min hjälte har inte mörkt hår."
+  },
+  {
+    "name": "darkShirt",
+    "question": "Har din hjälte ljust hår?",
+    "true": "Ja, det är ljust hår på min hjälte.",
+    "false": "Nej, min hjälte har inte ljust hår."
+  },
+  {
+    "name": "darkEyes",
+    "question": "Har din hjälte mörka ögon?",
+    "true": "Ja, min hjälte har mörka ögon.",
+    "false": "Nej, min hjälte har inte mörka ögon."
+  },
+  {
+    "name": "blueEyes",
+    "question": "Har din hjälte en blå ögon?",
+    "true": "Ja, min hjälte har blå ögon.",
+    "false": "Nej, min hjälte har inte blå ögon."
+  },
+  {
+    "name": "showingHair",
+    "question": "Syns håret på din hjälte?",
+    "true": "Ja, man kan se håret på min hjälte.",
+    "false": "Nej, man kan inte se håret på min hjälte."
+  },
+  {
+    "name": "headGear",
+    "question": "Har din hjälte huvudbonad?",
+    "true": "Ja, min hjälte har huvudbonad.",
+    "false": "Nej, ingen huvudbonad på min hjälte."
   }
 ]

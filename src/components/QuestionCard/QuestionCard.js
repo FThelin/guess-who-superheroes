@@ -25,11 +25,17 @@ function QuestionCard(props) {
           setGamePhase(2);
           e.target.parentNode.style.opacity = 0.5;
           if (value === true) {
-            setRobotText(question.true);
+            setRobotText({
+              text: question.true,
+              icon: <i className="fas fa-check-circle green"></i>,
+            });
             setStatus(<i className="fas fa-check-circle green"></i>);
             heroesLeftforPlayer(key, true);
           } else if (value === false) {
-            setRobotText(question.false);
+            setRobotText({
+              text: question.false,
+              icon: <i className="fas fa-times-circle red"></i>,
+            });
             setStatus(<i className="fas fa-times-circle red"></i>);
             heroesLeftforPlayer(key, false);
           }
