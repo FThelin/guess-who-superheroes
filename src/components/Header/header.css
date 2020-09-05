@@ -38,6 +38,10 @@
 .textBox i {
   font-size: 1.5rem;
 }
+.textBox img {
+  width: 5rem;
+  margin-left: 1rem;
+}
 
 .textBox button {
   margin-top: 1rem;

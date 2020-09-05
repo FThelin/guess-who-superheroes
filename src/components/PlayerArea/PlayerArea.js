@@ -2,16 +2,19 @@ import React, { useContext, useState } from "react";
 import "./playerArea.css";
 import GameContext from "../../context/gameContext";
 import Heroes from "../../heroes.json";
+import Questions from "../../questions.json";
 
 const PlayerArea = () => {
   const {
     gamePhase,
     setGamePhase,
+    robotText,
     setRobotText,
     playerHero,
     setPlayerHero,
     setRobotHero,
-    robotHero,
+    heroesLeftforRobot,
+    robotHeroesLeft,
   } = useContext(GameContext);
   const [playerCharacter, setPlayerCharacter] = useState("hero.png");
 
@@ -49,6 +52,20 @@ const PlayerArea = () => {
     });
   };
 
+  const answerQuestion = (answer) => {
+    for (let i = 0; i < Questions.length; i++) {
+      for (const [key, value] of Object.entries(Questions[i])) {
+        if (value === robotText.text) {
+          heroesLeftforRobot(Questions[i].name, answer);
+        }
+      }
+    }
+    setGamePhase(1);
+    setRobotText({
+      text: `Tack! Nu har jag ${robotHeroesLeft.length} hjätar kvar. Din tur!`,
+    });
+  };
+
   return (
     <div className="playerArea">
       {gamePhase === 0 ? (
@@ -56,15 +73,22 @@ const PlayerArea = () => {
           Nytt spel
         </button>
       ) : null}
-      {gamePhase === 3 ? <button className="yesBtn">Ja!</button> : null}
+      {gamePhase === 3 ? (
+        <button className="yesBtn" onClick={() => answerQuestion(true)}>
+          Ja!
+        </button>
+      ) : null}
 
       <div className="heroCard">
         <img src={require(`../../img/${playerCharacter}`)} alt="no-hero-yet" />
         <p>{playerHero.name}</p>
-        {console.log(robotHero)}
       </div>
-
-      {gamePhase === 3 ? <button className="noBtn">Nej!</button> : null}
+      {console.log(gamePhase)}
+      {gamePhase === 3 ? (
+        <button className="noBtn" onClick={() => answerQuestion(false)}>
+          Nej!
+        </button>
+      ) : null}
     </div>
   );
 };

@@ -3,16 +3,42 @@ import "./header.css";
 import GameContext from "../../context/gameContext";
 
 function Header() {
-  const { robotText, gamePhase, setGamePhase } = useContext(GameContext);
+  const {
+    robotText,
+    setRobotText,
+    gamePhase,
+    setGamePhase,
+    robotQuestions,
+    robotHeroesLeft,
+    playerHeroesLeft,
+  } = useContext(GameContext);
 
   const robotQuestion = () => {
-    console.log("hej");
+    let randomNumber = Math.floor(Math.random() * robotQuestions.length);
+    setRobotText({
+      text: robotQuestions[randomNumber].question,
+      icon: (
+        <img
+          src={require(`../../img/questions/${robotQuestions[randomNumber].image}`)}
+          alt="question-card"
+        ></img>
+      ),
+    });
     setGamePhase(3);
+  };
+
+  const log = () => {
+    {
+      console.log("Player ", playerHeroesLeft);
+    }
+    {
+      console.log("Robot ", robotHeroesLeft);
+    }
   };
 
   return (
     <div className="header">
-      <div className="headingBox">
+      <div className="headingBox" onClick={() => log()}>
         <img src={require("../../img/logo.png")} alt="logo"></img>
       </div>
       <div className="computerBox">
